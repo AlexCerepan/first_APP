@@ -1,0 +1,19 @@
+{
+  "name": "node-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "cross-env-shell DEBUG=app:* nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "easy-log": "^0.1.2",
+    "express": "~4.16.1",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
