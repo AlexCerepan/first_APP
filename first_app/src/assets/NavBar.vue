@@ -66,6 +66,8 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+
 #parent {
   width: 100px;
   height: 100vh;
@@ -88,7 +90,6 @@ template {
   padding: 0;
   margin: o;
   box-sizing: border-box;
-  font-family: "Edu Tas Beginner";
 }
 #toggle {
   z-index: 2;
@@ -174,6 +175,7 @@ template {
   align-items: center;
   width: 100%;
   text-align: center;
+  font-family: Robo;
 }
 
 .navigation ul li a .icon {
