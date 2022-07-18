@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NavBar></NavBar>
     <h1>Home page</h1>
     <p class="lead">{{ fetch_status }}</p>
   </div>
@@ -7,8 +8,10 @@
 
 <script>
 import axios from "axios";
+import NavBar from "../assets/NavBar.vue";
 export default {
   name: "HomePage",
+  components: [NavBar],
   data() {
     return {
       fetch_status: "fetching",
@@ -28,6 +31,7 @@ export default {
         this.fetch_status = "error";
       });
   },
+  components: { NavBar },
 };
 </script>
 
