@@ -1,14 +1,17 @@
 <template>
   <div>
-    <h1>Home page</h1>
-    <p class="lead">{{ fetch_status }}</p>
+    <NavBar></NavBar>
+    <AnimatedLogo></AnimatedLogo>
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import NavBar from "../assets/NavBar.vue";
+import AnimatedLogo from "../assets/AnimatedLogo.vue";
 export default {
   name: "HomePage",
+  components: [NavBar, AnimatedLogo],
   data() {
     return {
       fetch_status: "fetching",
@@ -28,6 +31,7 @@ export default {
         this.fetch_status = "error";
       });
   },
+  components: { NavBar, AnimatedLogo },
 };
 </script>
 
