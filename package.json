@@ -1,11 +1,27 @@
 {
-  "name": "our_app",
+  "name": "first_app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "tryThings.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install-server" : "cd server && npm install",
+    "install-client" : "cd client && npm install",
+    "install" : "npm run install-server && npm run install-client",
+    "server-watch" : "cd server && npm run watch",
+    "client-watch" : "cd client && npm start",
+    "watch" : "npm run server-watch & npm run client-watch",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexCerepan/first_APP.git"
+  },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexCerepan/first_APP/issues"
+  },
+  "homepage": "https://github.com/AlexCerepan/first_APP#readme"
 }
