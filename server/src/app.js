@@ -67,7 +67,6 @@ module.exports = app
  * 
 const express = require("express");
 const cookieParser = require("cookie-parser");
-const serverLogger = require("easy-log")("app:server", { colorCode: 200 });
 const cors = require("cors");
 var app = express();
 
