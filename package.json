@@ -4,12 +4,12 @@
   "description": "",
   "main": "",
   "scripts": {
-    "install-server" : "cd server && npm install",
-    "install-client" : "cd client && npm install",
-    "install" : "npm run install-server && npm run install-client",
-    "server-watch" : "cd server && npm run watch",
-    "client-watch" : "cd client && npm start",
-    "watch" : "npm run server-watch & npm run client-watch",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install": "npm run install-server && npm run install-client",
+    "server-watch": "cd server && npm run watch",
+    "client-watch": "cd client && npm start",
+    "watch": "npm run server-watch & npm run client-watch",
     "deploy": "npm run build --prefix client && npm start --prefix server",
     "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server"
   },
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/AlexCerepan/first_APP/issues"
   },
-  "homepage": "https://github.com/AlexCerepan/first_APP#readme"
+  "homepage": "https://github.com/AlexCerepan/first_APP#readme",
+  "dependencies": {
+    "vue-router": "^4.1.2"
+  }
 }
