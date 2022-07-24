@@ -33,9 +33,9 @@ export default {
 #citation {
   z-index: 3;
   position: absolute;
-  left: 35%;
-  top: 23%;
-  transform: translate(-50%, -50);
+  left: 40%;
+  top: 25%;
+  transform: translate(-50%, -50%);
   color: white;
   font-family: "Roboto";
 }
@@ -47,7 +47,7 @@ export default {
 @media screen and (max-width: 375px) {
   #citation {
     top: 26%;
-    left: 13%;
+    left: 40%;
   }
 
   #citation span {
@@ -58,21 +58,21 @@ export default {
 @media screen and (min-width: 425px) and (max-width: 768px) {
   #citation {
     top: 20%;
-    left: 10%;
+    left: 40%;
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   #citation {
     top: 26%;
-    left: 20%;
+    left: 40%;
   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   #citation {
-    top: 29%;
-    left: 30%;
+    top: 26%;
+    left: 38%;
   }
 }
 </style>

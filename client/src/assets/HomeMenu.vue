@@ -21,8 +21,10 @@
       <p>Done</p>
     </div>
     <div id="menuItem6" class="menuItem">
-      <i class="fa-solid fa-calendar-plus fa-2x"></i>
-      <p>Events</p>
+      <router-link :to="{ name: 'events' }"
+        ><i class="fa-solid fa-calendar-plus fa-2x"></i>
+        <a><p>Events</p></a></router-link
+      >
     </div>
     <div id="menuItem7" class="menuItem">
       <i class="fa-solid fa-user-group fa-2x"></i>
@@ -56,7 +58,7 @@ export default {
   cursor: pointer;
   box-sizing: border-box;
   text-align: center;
-  color: #daa06d;
+  color: #daa06d !important;
   position: absolute;
   width: 100px;
   height: 100px;
@@ -66,9 +68,15 @@ export default {
 
 .menuItem i {
   margin-top: 25px;
+  color: #daa06d;
+}
+
+.menuItem a {
+  text-decoration: none;
 }
 
 .menuItem p {
+  color: #daa06d;
   margin-top: 5px;
   font-family: "Poppins";
 }
