@@ -74,27 +74,27 @@ export default {
 }
 
 #menuItem2 {
-  animation: movement2 2.3s ease forwards;
+  animation: movement2 1s ease forwards;
 }
 
 #menuItem3 {
-  animation: movement3 2.3s ease forwards;
+  animation: movement3 1s ease forwards;
 }
 
 #menuItem4 {
-  animation: movement4 2.3s ease forwards;
+  animation: movement4 1s ease forwards;
 }
 
 #menuItem5 {
-  animation: movement5 2.3s ease forwards;
+  animation: movement5 1s ease forwards;
 }
 
 #menuItem6 {
-  animation: movement6 2.3s ease forwards;
+  animation: movement6 1s ease forwards;
 }
 
 #menuItem7 {
-  animation: movement7 2.3s ease forwards;
+  animation: movement7 1s ease forwards;
 }
 
 @keyframes movement2 {
@@ -125,6 +125,54 @@ export default {
 @keyframes movement7 {
   to {
     transform: translate(55px, 100px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #menuContainer {
+    width: 200px;
+    height: 200px;
+  }
+
+  .menuItem {
+    width: 70px;
+    height: 70px;
+  }
+
+  .menuItem i {
+    margin-top: 10px;
+    font-size: 1.5em;
+  }
+
+  @keyframes movement2 {
+    to {
+      transform: translateX(-80px);
+    }
+  }
+  @keyframes movement3 {
+    to {
+      transform: translateX(80px);
+    }
+  }
+  @keyframes movement4 {
+    to {
+      transform: translate(-40px, -75px);
+    }
+  }
+  @keyframes movement5 {
+    to {
+      transform: translate(40px, -75px);
+    }
+  }
+  @keyframes movement6 {
+    to {
+      transform: translate(-40px, 75px);
+    }
+  }
+  @keyframes movement7 {
+    to {
+      transform: translate(40px, 75px);
+    }
   }
 }
 </style>

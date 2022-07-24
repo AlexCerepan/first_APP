@@ -43,4 +43,36 @@ export default {
 #citation span {
   font-size: 2em;
 }
+
+@media screen and (max-width: 375px) {
+  #citation {
+    top: 26%;
+    left: 13%;
+  }
+
+  #citation span {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  #citation {
+    top: 20%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  #citation {
+    top: 26%;
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  #citation {
+    top: 29%;
+    left: 30%;
+  }
+}
 </style>
