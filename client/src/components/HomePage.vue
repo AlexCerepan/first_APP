@@ -18,8 +18,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -33,11 +31,11 @@ export default {
 #citation {
   z-index: 3;
   position: absolute;
-  left: 40%;
-  top: 25%;
+  left: 43%;
+  top: 29%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: "Roboto";
+  font-family: "DM Sans";
 }
 
 #citation span {

@@ -107,32 +107,32 @@ export default {
 
 @keyframes movement2 {
   to {
-    transform: translateX(-110px);
+    transform: translateX(-100px);
   }
 }
 @keyframes movement3 {
   to {
-    transform: translateX(110px);
+    transform: translateX(100px);
   }
 }
 @keyframes movement4 {
   to {
-    transform: translate(-55px, -100px);
+    transform: translate(-50px, -87px);
   }
 }
 @keyframes movement5 {
   to {
-    transform: translate(55px, -100px);
+    transform: translate(50px, -87px);
   }
 }
 @keyframes movement6 {
   to {
-    transform: translate(-55px, 100px);
+    transform: translate(-50px, 87px);
   }
 }
 @keyframes movement7 {
   to {
-    transform: translate(55px, 100px);
+    transform: translate(50px, 87px);
   }
 }
 

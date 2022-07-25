@@ -1,13 +1,21 @@
 <template>
   <div id="searchBarContainer">
-    <input type="search" id="search" />
+    <input type="text" placeholder="search Events" @input="searched" />
   </div>
 </template>
+
 <script>
 export default {
   name: "searchInput",
+  methods: {
+    searched: function (event) {
+      const message = event.target.value;
+      this.$emit("newSearch", message);
+    },
+  },
 };
 </script>
+
 <style>
 #searchBarContainer {
   position: absolute;
